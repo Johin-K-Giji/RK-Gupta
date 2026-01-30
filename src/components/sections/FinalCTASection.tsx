@@ -25,18 +25,15 @@ export const FinalCTASection = ({ onCTAClick }: FinalCTASectionProps) => {
       <div className="container">
         <div className="max-w-4xl mx-auto text-center">
 
-          {/* HEADER */}
-          <span className="inline-block bg-white/10 text-[#00a8e8] px-3 py-1 rounded-full text-xs font-semibold mb-3">
-            Final Note
-          </span>
+
 
           <h2 className="text-2xl md:text-3xl font-science font-bold mb-3 leading-tight">
-            Yeh session un logon ke liye hai jo{' '}
-            <span className="text-[#00a8e8]">clarity aur structure</span> ke saath seekhna chahte hain
+            Yeh Session Un Logon Ke Liye Hai Jo{' '}
+            <span className="text-[#00a8e8]">Clarity Aur Structure</span> Ke Saath Seekhna Chahte Hain
           </h2>
 
           {/* COPY */}
-          <p className="text-sm md:text-base text-white/80 max-w-3xl mx-auto leading-relaxed mb-6">
+          <p className="text-md md:text-base text-white/80 max-w-3xl mx-auto leading-relaxed mb-6 text-left">
             Agar aap concepts ko clear aur structured tareeke se samajhna chahte ho,
             aur learning ko bina pressure lena chahte ho,
             toh yeh session aapke liye hai.

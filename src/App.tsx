@@ -26,7 +26,7 @@ const App = () => (
           <Route path="/oto-fb" element={<OtoPage/>}/>
           <Route path="/ty-fb" element={<ThankYouPage/>}/>
           <Route path="/ty-oto-fb" element={<ThankYouPageOtoFb/>}/>
-          <Route path="/ga" element={<IndexGa/>}/>
+          {/* <Route path="/ga" element={<IndexGa/>}/> */}
            <Route path="/ty-ga" element={<ThankYouPageGa/>}/>
           <Route path="/oto-ga" element={<OtoPageGa/>}/>
           <Route path="/ty-oto-ga" element={<ThankYouPageOtoGa/>} />

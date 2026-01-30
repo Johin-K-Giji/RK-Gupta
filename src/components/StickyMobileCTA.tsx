@@ -15,16 +15,7 @@ export const StickyMobileCTA = ({ onCTAClick }: StickyMobileCTAProps) => {
       <div className="flex flex-col gap-2">
 
         {/* TITLE */}
-        <p className="text-xs font-semibold text-[#00171f] leading-tight text-center">
-          Agar aapko <span className="text-[#007ea7]">options genuinely samajhna hai</span>,  
-          <br />
-          toh session join karo.
-        </p>
-
-        <p className="text-[11px] text-[#00171f]/80 text-center">
-          Main aapko <span className="font-semibold">basics se clarity</span> tak le jaunga.
-        </p>
-
+       
         {/* TIMER + SEATS */}
         <div className="flex items-center justify-between gap-3">
 

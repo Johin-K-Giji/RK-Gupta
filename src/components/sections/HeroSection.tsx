@@ -56,22 +56,19 @@ export const HeroSection = () => {
           {/* LEFT CONTENT */}
           <div className="space-y-6 text-center lg:text-left">
 
-            <div className="inline-flex items-center gap-2 bg-[#003459]/70 px-4 py-2 rounded-full text-sm">
-              <Star className="h-4 w-4 text-[#00a8e8]" />
-              <span>Live Conceptual Masterclass</span>
-            </div>
+            
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               Confusion Kam Karo <br />
-              <span className="text-[#00a8e8] text-2xl">
+              <span className="text-[#00a8e8] text-xl">
                 Concepts Ko Clear Tareeke Se Samjho
               </span>
             </h1>
 
-            <p className="text-lg text-white/90">
+            <p className="text-md text-white/90">
               Yeh workshop un logon ke liye hai jo learning ko
               <span className="font-semibold"> shaant, structured aur practical </span>
-              tareeke se lena chahte hain.
+              tareeke se seekhna chahte hain.
             </p>
 
             {/* DETAILS */}
@@ -100,20 +97,7 @@ export const HeroSection = () => {
           <div className="space-y-6 max-w-md mx-auto w-full">
 
             {/* EDUCATOR HIGHLIGHT */}
-            <div className="bg-[#003459] border border-[#00a8e8] rounded-2xl p-5 text-center shadow-xl">
-              <div className="flex justify-center mb-2">
-                <User className="h-8 w-8 text-[#00a8e8]" />
-              </div>
-              <p className="text-sm text-white/80 mb-1">Your Educator</p>
-              <p className="text-2xl font-bold text-white">RK Gupta</p>
-              <p className="text-sm text-white/90">
-                Conceptual Learning Mentor • Process-Based Educator
-              </p>
-              <div className="flex items-center justify-center gap-2 mt-1 text-sm text-white/90">
-                <Award className="h-4 w-4 text-[#00a8e8]" />
-                <span>TEDx Speaker • ISO Certified Trainer</span>
-              </div>
-            </div>
+
 
             {/* FORM CARD */}
             <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 text-[#00171f]" id='#register'>

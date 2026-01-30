@@ -7,32 +7,29 @@ import {
 
 export const LearningPhilosophySection = () => {
   return (
-    <section className="py-16 md:py-24 bg-white text-[#00171f]">
+    <section className="py-8 md:py-24 bg-white text-[#00171f]">
       <div className="container max-w-6xl mx-auto">
 
         {/* HEADER */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block bg-[#e6f6fb] text-[#007ea7] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
-            Learning Philosophy
-          </span>
+        <div className="text-center max-w-3xl mx-auto mb-8">
 
-          <h2 className="text-3xl md:text-4xl font-science font-bold leading-tight">
-            Learning should feel <span className="text-[#007ea7]">clear</span>, not overwhelming
+          <h2 className="text-2xl md:text-4xl font-science font-bold leading-tight">
+            Learning Easy Aur <span className="text-[#007ea7]">Clear</span> Feel Hona Chahiye, Overload Jaisa Nah
           </h2>
         </div>
 
         {/* MAIN CONTENT */}
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="grid md:grid-cols-2 gap-4 items-center">
 
           {/* LEFT – PHILOSOPHY */}
           <div className="space-y-6">
-            <p className="text-lg leading-relaxed text-[#00171f]/90">
+            <p className="text-md leading-relaxed text-[#00171f]/90">
               Mera approach bilkul simple hai.  
               Main concepts ko <span className="font-semibold">slow, clear aur structured</span>{' '}
               tareeke se samjhata hoon — taaki understanding strong ho aur confusion naturally kam ho.
             </p>
 
-            <p className="text-lg leading-relaxed text-[#00171f]/90">
+            <p className="text-md leading-relaxed text-[#00171f]/90">
               Yeh session un logon ke liye hai jo sirf information nahi,
               balki <span className="font-semibold">sochne ka sahi tareeqa</span> seekhna chahte hain.
             </p>

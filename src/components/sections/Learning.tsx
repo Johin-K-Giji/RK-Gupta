@@ -7,20 +7,18 @@ import {
 
 export const WorkshopLearningSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-white text-[#00171f]">
+    <section className="py-8 md:py-24 bg-white text-[#00171f]">
       <div className="container max-w-5xl mx-auto">
 
         {/* HEADER */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block bg-[#e6f6fb] text-[#007ea7] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
-            Right Fit Check
-          </span>
+        <div className="text-center max-w-3xl mx-auto mb-10">
+        
 
-          <h2 className="text-3xl md:text-4xl font-science font-bold mb-4">
+          <h2 className="text-2xl md:text-4xl font-science font-bold mb-2">
             Yeh Session Aapke Liye Hai Agar
           </h2>
 
-          <p className="text-lg text-[#00171f]/80">
+          <p className="text-md text-[#00171f]/80 text-left">
             Yeh masterclass un logon ke liye design ki gayi hai
             jo learning ko <span className="font-semibold">depth aur clarity</span> ke saath lena chahte hain.
           </p>
@@ -83,7 +81,7 @@ export const WorkshopLearningSection = () => {
         </div>
 
         {/* FOOT NOTE */}
-        <div className="mt-14 max-w-3xl mx-auto text-center">
+        <div className="mt-8 max-w-3xl mx-auto text-center">
           <p className="text-lg text-[#00171f]/80">
             Yeh session un logon ke liye hai jo
             <span className="font-semibold"> samajh ke seekhna</span> chahte hain —  

@@ -20,20 +20,17 @@ export const WhatYoullLearnSection = () => {
   };
 
   return (
-    <section className="py-10 md:py-24 bg-[#003459] text-white">
+    <section className="py-8 md:py-24 bg-[#003459] text-white">
       <div className="container max-w-6xl mx-auto">
 
         {/* HEADER */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block bg-[#00171f]/60 text-[#00a8e8] px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
-            Session Overview
-          </span>
-
-          <h2 className="text-3xl md:text-4xl font-science font-bold mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-10">
+         
+          <h2 className="text-2xl md:text-4xl font-science font-bold mb-4">
             Is Live Session Mein Kya Cover Hoga
           </h2>
 
-          <p className="text-lg text-white/85">
+          <p className="text-md text-white/85 text-left">
             Is masterclass mein topics ko <span className="font-semibold">step-by-step</span>{' '}
             explain kiya jaayega — taaki flow samajh aaye aur clarity build ho.
           </p>
@@ -85,10 +82,10 @@ export const WhatYoullLearnSection = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 text-center">
+        <div className="mt-8 text-center">
           <button
             onClick={scrollToForm}
-            className="inline-flex items-center gap-2 bg-[#00a8e8] hover:bg-[#00a8e8]/90 text-[#00171f] font-bold px-10 py-4 rounded-xl text-lg transition shadow-lg"
+            className="inline-flex items-center gap-2 bg-[#00a8e8] hover:bg-[#00a8e8]/90 text-[#00171f] font-bold px-10 py-2 rounded-xl text-lg transition shadow-lg"
           >
             Register for the Live Masterclass
             <ArrowUpRight className="h-5 w-5" />

@@ -14,6 +14,7 @@ import { DisclaimerFooter } from '@/components/sections/DisclaimerFooter';
 import { useFacebookPixel } from "@/hooks/useFacebookPixelHome";
 import { LearningPhilosophySection } from '@/components/sections/LearningPhilosophySection';
 import { FreeAccessSection } from '@/components/sections/FreeAccessSection';
+import { CelebsBeliefSection } from '@/components/sections/CelebsBeliefSection';
 
 
 const Index = () => {
@@ -36,6 +37,7 @@ useFacebookPixel()
       <WhatYoullLearnSection />
       <WorkshopLearningSection />
       <FreeAccessSection/>
+      <CelebsBeliefSection/>
       <MentorSection />
       <FAQSection />
       <FinalCTASection onCTAClick={scrollToHero} />

@@ -44,7 +44,7 @@ const bonuses = [
 export const BonusesSection = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  /* 📱 Scroll-based highlight (mobile only) */
+  /* 📱 Scroll highlight (mobile only) */
   useEffect(() => {
     if (window.innerWidth >= 768) return;
 
@@ -63,34 +63,40 @@ export const BonusesSection = () => {
     );
 
     cards.forEach((card) => observer.observe(card));
-
     return () => observer.disconnect();
   }, []);
 
   return (
-    <section className="relative py-6 md:py-20 bg-[#04343b] overflow-hidden">
+    <section className="relative py-8 md:py-20 bg-[#04343b] overflow-visible">
 
-      {/* ✨ Background Glow */}
+      {/* 🌟 Section Glow */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-yellow-400/10 blur-[120px]" />
+        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-yellow-400/10 blur-[140px]" />
       </div>
 
       <div className="container relative z-10">
 
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-8">
-          <span className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-1.5 rounded-full text-sm font-semibold mb-3">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <span className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
             <Gift className="h-4 w-4 text-yellow-400" />
             Exclusive Bonuses
           </span>
 
-          <h2 className="text-3xl md:text-4xl font-science font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
             Bonuses Worth{' '}
-            <span className="text-yellow-400">₹5,000+</span>{' '}
-            Included <span className="text-green-400">FREE</span>
+            <span className="relative inline-block text-yellow-400">
+              ₹5,000+
+              <span className="absolute inset-0 blur-xl bg-yellow-400/40 -z-10 animate-pulse" />
+            </span>{' '}
+            Included{' '}
+            <span className="relative inline-block text-green-400">
+              FREE
+              <span className="absolute inset-0 blur-xl bg-green-400/40 -z-10 animate-pulse" />
+            </span>
           </h2>
 
-          <p className="text-white/70 mt-2">
+          <p className="text-white/70 mt-3">
             These bonuses alone are worth more than the workshop price
           </p>
         </div>
@@ -103,6 +109,7 @@ export const BonusesSection = () => {
               data-index={index}
               className={`
                 bonus-card group relative rounded-2xl p-6
+                overflow-visible
                 bg-white/10 backdrop-blur-lg
                 border border-white/15
                 transition-all duration-300
@@ -114,10 +121,26 @@ export const BonusesSection = () => {
                 md:hover:-translate-y-2 md:hover:shadow-2xl
               `}
             >
-              {/* Glow layer */}
+
+              {/* 🎀 TOP-LEFT BONUS RIBBON */}
+              {bonus.highlight && (
+                <div className="absolute top-0 left-0 z-40 pointer-events-none">
+                  <div className="
+                    bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500
+                    text-white text-[11px] font-extrabold tracking-wider
+                    px-4 py-1
+                    rounded-br-xl
+                    shadow-xl
+                  ">
+                    BONUS
+                  </div>
+                </div>
+              )}
+
+              {/* ✨ Glow layer (behind everything) */}
               <div
                 className={`
-                  absolute inset-0 rounded-2xl
+                  absolute inset-0 rounded-2xl -z-10
                   transition-opacity duration-500
                   bg-gradient-to-br ${bonus.accent} blur-xl
                   ${
@@ -149,10 +172,10 @@ export const BonusesSection = () => {
                   {bonus.description}
                 </p>
 
-                {/* FREE badge */}
                 {bonus.highlight && (
-                  <span className="inline-block mt-3 text-xs font-bold bg-green-500 text-white px-3 py-1 rounded-full">
+                  <span className="relative inline-block mt-4 text-xs font-bold text-white bg-green-500 px-3 py-1 rounded-full">
                     FREE BONUS
+                    <span className="absolute inset-0 blur-lg bg-green-400/50 -z-10 animate-pulse" />
                   </span>
                 )}
               </div>

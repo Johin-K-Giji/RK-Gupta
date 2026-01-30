@@ -2,16 +2,14 @@ import { CheckCircle2, ShieldCheck } from 'lucide-react';
 
 export const MentorSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-8 md:py-24 bg-white">
       <div className="container max-w-6xl mx-auto">
 
         {/* Header */}
-        <div className="text-center mb-14">
-          <span className="inline-block mb-3 px-5 py-1.5 rounded-full bg-[#e6f6fb] text-[#007ea7] text-sm font-semibold">
-            About RK Gupta
-          </span>
+        <div className="text-center mb-6">
+          
 
-          <h2 className="text-4xl md:text-5xl font-science font-bold text-[#00171f]">
+          <h2 className="text-2xl md:text-5xl font-science font-bold text-[#00171f]">
             Aapka Educator: RK Gupta
           </h2>
         </div>
@@ -34,7 +32,7 @@ export const MentorSection = () => {
             {/* Content */}
             <div className="flex-1 text-center md:text-left">
 
-              <h3 className="text-3xl font-science font-bold text-[#00171f] mb-2">
+              <h3 className="text-2xl font-science font-bold text-[#00171f] mb-2">
                 RK Gupta
               </h3>
 
@@ -43,14 +41,14 @@ export const MentorSection = () => {
               </p>
 
               {/* CORE PHILOSOPHY */}
-              <p className="text-lg text-[#00171f]/90 mb-6 leading-relaxed">
+              <p className="text-md text-[#00171f]/90 mb-6 leading-relaxed text-left">
                 Main complex topics ko <span className="font-semibold">exaggeration ke saath present nahi karta</span>.  
                 <br />
                 Mera focus hota hai <span className="font-semibold">clarity, structure aur understanding</span> par.
               </p>
 
               {/* POINTS */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
                 {[
                   'Hindi mein clear explanation',
                   'Step-by-step teaching approach',
@@ -71,8 +69,8 @@ export const MentorSection = () => {
 
               {/* DISCLAIMER STYLE NOTE */}
               <div className="flex items-start gap-3 bg-[#003459] rounded-xl p-4 text-white">
-                <ShieldCheck className="h-5 w-5 text-[#00a8e8] mt-0.5 flex-shrink-0" />
-                <p className="text-sm leading-relaxed">
+                <ShieldCheck className="h-5 w-5 text-[#00a8e8] mt-0.5 flex-shrink-0 mt-8" />
+                <p className="text-sm leading-relaxed text-left">
                   Is session mein <span className="font-semibold">koi tips, calls ya recommendations</span> nahi di jaati.  
                   Yeh ek <span className="font-semibold">pure educational learning experience</span> hai.
                 </p>
