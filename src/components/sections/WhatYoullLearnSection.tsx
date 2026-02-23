@@ -13,7 +13,7 @@ import {
 
 export const WhatYoullLearnSection = () => {
   const scrollToForm = () => {
-    const el = document.getElementById('#register');
+    const el = document.getElementById('register');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -87,7 +87,7 @@ export const WhatYoullLearnSection = () => {
             onClick={scrollToForm}
             className="inline-flex items-center gap-2 bg-[#00a8e8] hover:bg-[#00a8e8]/90 text-[#00171f] font-bold px-10 py-2 rounded-xl text-lg transition shadow-lg"
           >
-            Register for the Live Masterclass
+            Register for the Live Masterclass @ Just ₹9/-
             <ArrowUpRight className="h-5 w-5" />
           </button>
 

@@ -13,8 +13,8 @@ interface FinalCTASectionProps {
 
 export const FinalCTASection = ({ onCTAClick }: FinalCTASectionProps) => {
 
- const scrollToForm = () => {
-    const el = document.getElementById('#register');
+  const scrollToForm = () => {
+    const el = document.getElementById('register');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -63,7 +63,7 @@ export const FinalCTASection = ({ onCTAClick }: FinalCTASectionProps) => {
                onClick={scrollToForm}
               className="w-full md:w-auto bg-[#00a8e8] hover:bg-[#00a8e8]/90 text-[#00171f] font-bold px-8"
             >
-              FREE Seat Claim Karein
+              Pay only ₹9/- & Seat Claim Karein
               <ArrowRight className="h-4 w-4" />
             </Button>
 
